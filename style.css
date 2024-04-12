@@ -87,9 +87,29 @@ header form{
     color: var(--color-base-gray-500);
 }
 
+/* Galeria */
 main{
     background-color: var(--color-base-gray-100);
     overflow-y: scroll;
+}
+
+main h1{
+    padding-top: 1.6rem;
+    font-size: 2.4rem;
+}
+
+.gallery {
+    margin-top: 3.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 16/9; /* permite definir a proporção desejada entre largura e altura da caixa de um elemento */
+    object-fit: cover; /* a imagem será redimensionada para que não tenha nenhum espaço vazio */
 }
 
 footer p {
