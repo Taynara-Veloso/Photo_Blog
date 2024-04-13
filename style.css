@@ -140,6 +140,8 @@ main h1{
     transition-timing-function: ease-out; */
 
     transition: all 200ms ease-out; /* short hand */
+
+    display: block;
 }
 
 .item img:hover {
