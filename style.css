@@ -98,6 +98,19 @@ main h1{
     font-size: 2.4rem;
 }
 
+.title{
+    animation-name: titleGallery;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+
+    /* animation: shine 100ms infinite; */
+}
+
+.title:hover{
+    animation-play-state: paused;
+}
+
 .gallery {
     margin-top: 3.2rem;
 
@@ -166,4 +179,16 @@ footer p {
     font-weight: 600;
 }
 
+@keyframes titleGallery {
+    50% {
+        transform: translateX(69vw);
+    }
+}
 
+/* 
+@keyframes shine {
+    50% {
+        opacity: 0.1;
+    }
+}
+*/
