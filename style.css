@@ -118,6 +118,13 @@ main h1{
     object-fit: cover; /* a imagem será redimensionada para que não tenha nenhum espaço vazio */
 }
 
+.item img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%); 
+    /* A propriedade CSS filter aplica efeitos gráficos como desfoque ou 
+    mudança de cor a um elemento. Os filtros são comumente usados 
+    ​​para ajustar a renderização de imagens, planos de fundo e bordas. */
+}
+
 .details {
     padding: 2.2rem;
 }
