@@ -116,6 +116,13 @@ main h1{
     width: 100%;
     aspect-ratio: 16/9; /* permite definir a proporção desejada entre largura e altura da caixa de um elemento */
     object-fit: cover; /* a imagem será redimensionada para que não tenha nenhum espaço vazio */
+
+    /* transition-property: all;
+    transition-duration: 200ms;
+    transition-delay: 0;
+    transition-timing-function: ease-out; */
+
+    transition: all 200ms ease-out; /* short hand */
 }
 
 .item img:hover {
