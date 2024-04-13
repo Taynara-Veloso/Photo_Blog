@@ -22,6 +22,8 @@ body{
     font-size: 1.6rem;
     background-color: var(--color-base-white);
     color: var(--color-base-gray-900);
+
+    overflow: hidden;
 }
 
 #app {
@@ -96,19 +98,7 @@ main{
 main h1{
     padding-top: 1.6rem;
     font-size: 2.4rem;
-}
 
-.title{
-    animation-name: titleGallery;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-direction: reverse;
-
-    /* animation: shine 100ms infinite; */
-}
-
-.title:hover{
-    animation-play-state: paused;
 }
 
 .gallery {
@@ -179,16 +169,20 @@ footer p {
     font-weight: 600;
 }
 
-@keyframes titleGallery {
-    50% {
-        transform: translateX(69vw);
-    }
+header {
+    --startY: -100%;
+    animation-name: animation-start;
+    animation-duration: 1s;
 }
 
-/* 
-@keyframes shine {
-    50% {
-        opacity: 0.1;
+footer {
+    --startY: 100%;
+    animation-name: animation-start;
+    animation-duration: 1s;
+}
+
+@keyframes animation-start {
+    from {
+        transform: translateY(var(--startY));
     }
 }
-*/
